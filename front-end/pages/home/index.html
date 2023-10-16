@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="./script.js" defer></script>
+    <title>Pokédex</title>
+  </head>
+  <body>
+    <!-- Header Section -->
+    <div class="header-container">
+      <div class="menu-container">
+        <img
+          id="menubar-icon"
+          src="../../images/icons/menubar-icon.png"
+          alt="menubar-icon"
+        />
+      </div>
+
+      <div class="searchbar-container">
+        <button class="prev-btn" onclick="prev()"></button>
+        <input id="searchbar" type="text" placeholder="Enter Pokémon Name..." />
+        <button class="next-btn" onclick="next()"></button>
+      </div>
+
+      <div class="filter-container">
+        <img
+          id="filter-icon"
+          src="../../images/icons/filter-icon.png"
+          alt="filter-icon"
+        />
+      </div>
+    </div>
+    
+    <!-- Pokedex Section -->
+    <div class="main-container">
+      <div class="pokedex-container">
+        <ul id="pokedex">
+
+        </ul>
+      </div>
+    </div>
+
+  </body>
+  <script src="../../node_modules/axios/dist/axios.min.js"></script>
+</html>
